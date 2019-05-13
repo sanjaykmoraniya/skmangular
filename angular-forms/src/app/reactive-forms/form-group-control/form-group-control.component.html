@@ -1,0 +1,19 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-md-3">
+      <label>
+        First Name:
+        <input type="text" formControlName="firstName">
+      </label>
+    </div>
+    <div class="col-md-3">
+      <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+      </label>
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">Submit</button>
+    </div>
+  </div>
+</form>

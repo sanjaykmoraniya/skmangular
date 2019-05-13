@@ -1,0 +1,66 @@
+<div class="nav">
+
+</div>
+<div class="panel-group">
+    <div class="panel-info">
+        <div id="angularForm" (click)="onPanelClick($event)" class="panel-heading">Angular Forms</div>
+        <div class="panel-body collapse in angularForm">
+            <div class="panel panel-primary">
+                <div id="panelTemplateForm" (click)="onPanelClick($event)" class="panel-heading">Template Form</div>
+                <div class="panel-body panelTemplateForm collapse">
+                    <app-template-form></app-template-form>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div id="panelReactiveForm" (click)="onPanelClick($event)" class="panel-heading">Reactive Form:
+                    ReactiveFormsModule</div>
+                <div class="panel-body panelReactiveForm collapse in">
+                    <div class="panel panel-info">
+                        <div id="panelReactiveFormControl" (click)="onPanelClick($event)" class="panel-heading">
+                            FormControl</div>
+                        <div class="panel-body panelReactiveFormControl collapse">
+                            <app-reactive-forms></app-reactive-forms>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelFormGroupControl" (click)="onPanelClick($event)" class="panel-heading">Form Group
+                            Control</div>
+                        <div class="panel-body panelFormGroupControl collapse">
+                            <app-form-group-control></app-form-group-control>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelFormNestedGroupControl" (click)="onPanelClick($event)" class="panel-heading">Form
+                            Nested Group Control</div>
+                        <div class="panel-body panelFormNestedGroupControl collapse">
+                            <app-form-nested-group-control></app-form-nested-group-control>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelFormBuilder" (click)="onPanelClick($event)" class="panel-heading">Form Builder
+                        </div>
+                        <div class="panel-body panelFormBuilder collapse">
+                            <app-form-builder></app-form-builder>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelSimpleValidation" (click)="onPanelClick($event)" class="panel-heading">Simple Form
+                            Validation
+                        </div>
+                        <div class="panel-body panelSimpleValidation collapse">
+                            <app-simple-form-validation></app-simple-form-validation>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelDynamicControlFormArray" (click)="onPanelClick($event)" class="panel-heading">
+                            Dynamic controls using form arrays
+                        </div>
+                        <div class="panel-body panelDynamicControlFormArray collapse in">
+                            <app-dynamic-control-form-arrays></app-dynamic-control-form-arrays>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

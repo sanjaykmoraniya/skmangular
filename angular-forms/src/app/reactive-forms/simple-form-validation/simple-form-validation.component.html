@@ -1,0 +1,83 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" autocomplete="off">
+
+  <div class="row">
+    <div class="col-md-3">
+      <label>
+        {{firstNameLabel}}
+        <input type="text" id="firstName" name="firstName" formControlName="firstName" required>
+      </label>
+      <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" class="alert alert-danger">
+        <div *ngIf="firstName.errors.required">
+          Name is required.
+        </div>
+        <div *ngIf="firstName.errors.minlength">
+          Name must be at least 4 characters long.
+        </div>
+        <div *ngIf="firstName.errors.forbiddenName">
+          Name cannot be Bob.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+      </label>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+  <div formGroupName="address">
+    <h3>Address</h3>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>
+            Street:
+            <input type="text" formControlName="street">
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>
+            State:
+            <input type="text" formControlName="state">
+          </label>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary" type="button" (click)="updateProfile()">Update Profile</button>
+      </div>
+      <div class="col-md-1">
+        <button class="btn btn-primary" type="button" (click)="clearForm()">Clear</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>
+            City:
+            <input type="text" formControlName="city">
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>
+            Zip Code:
+            <input type="text" formControlName="zip">
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">Submit</button>
+      </div>
+      <p>
+        Form Status: {{ profileForm.status }}
+      </p>
+    </div>
+  </div>
+  <br>
+</form>

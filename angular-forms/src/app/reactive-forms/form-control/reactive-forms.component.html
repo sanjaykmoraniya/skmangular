@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="col-md-6">
+      <label>
+        Name:
+        <input type="text" [formControl]="name">
+      </label>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-primary" (click)="updateName()">Update Name</button>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-warning" type="button" (click)="clearName()">Clear Name</button>
+    </div>
+  </div>

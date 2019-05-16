@@ -30,7 +30,7 @@ export class HeroFormReactiveAsyncValidationComponent implements OnInit {
         updateOn: 'blur'
       }),
       power: new FormControl(this.hero.power, Validators.required)
-    },  { validators: identityRevealedValidator }); // <-- add custom validator at the FormGroup level
+    }, { validators: identityRevealedValidator }); // <-- add custom validator at the FormGroup level
   }
 
   get name() { return this.heroForm.get('name'); }

@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class UniqueAlterEgoValidator implements AsyncValidator {
-  constructor(private heroesService: HeroesService) {}
+  constructor(private heroesService: HeroesService) { }
 
   validate(
     ctrl: AbstractControl
@@ -34,7 +34,7 @@ export class UniqueAlterEgoValidator implements AsyncValidator {
   ]
 })
 export class UniqueAlterEgoValidatorDirective {
-  constructor(private validator: UniqueAlterEgoValidator) {}
+  constructor(private validator: UniqueAlterEgoValidator) { }
 
   validate(control: AbstractControl) {
     this.validator.validate(control);

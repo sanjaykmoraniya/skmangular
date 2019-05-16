@@ -12,6 +12,11 @@ import { FormNestedGroupControlComponent } from './reactive-forms/form-nested-gr
 import { FormBuilderComponent } from './reactive-forms/form-builder/form-builder.component';
 import { SimpleFormValidationComponent } from './reactive-forms/simple-form-validation/simple-form-validation.component';
 import { DynamicControlFormArraysComponent } from './reactive-forms/dynamic-control-form-arrays/dynamic-control-form-arrays.component';
+import { HeroFormReactiveAsyncValidationComponent } from './reactive-forms/async-validation/hero-form-reactive.component';
+import { HeroFormTemplateAsyncValidationComponent } from './template-driven-forms/async-validation/hero-form-template.component';
+import { ForbiddenValidatorDirective } from './shared/forbidden-name.directive';
+import { IdentityRevealedValidatorDirective } from './shared/identity-revealed.directive';
+import { UniqueAlterEgoValidatorDirective } from './shared/alter-ego.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { DynamicControlFormArraysComponent } from './reactive-forms/dynamic-cont
     FormNestedGroupControlComponent,
     FormBuilderComponent,
     SimpleFormValidationComponent,
-    DynamicControlFormArraysComponent
+    DynamicControlFormArraysComponent,
+    HeroFormReactiveAsyncValidationComponent,
+    HeroFormTemplateAsyncValidationComponent,
+    ForbiddenValidatorDirective,
+    IdentityRevealedValidatorDirective,
+    UniqueAlterEgoValidatorDirective
   ],
   imports: [
     BrowserModule,

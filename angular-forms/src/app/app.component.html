@@ -7,8 +7,23 @@
         <div class="panel-body collapse in angularForm">
             <div class="panel panel-primary">
                 <div id="panelTemplateForm" (click)="onPanelClick($event)" class="panel-heading">Template Form</div>
-                <div class="panel-body panelTemplateForm collapse">
-                    <app-template-form></app-template-form>
+                <div class="panel-body panelTemplateForm collapse in">
+
+                    <div class="panel panel-info">
+                        <div id="panelTemplateFormValidation" (click)="onPanelClick($event)" class="panel-heading">
+                            Validation</div>
+                        <div class="panel-body panelTemplateFormValidation collapse">
+                            <app-template-form></app-template-form>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-info">
+                        <div id="panelAsyncValidationTemplate" (click)="onPanelClick($event)" class="panel-heading">
+                            Async Validation</div>
+                        <div class="panel-body panelAsyncValidationTemplate collapse in">
+                            <app-hero-form-async-validation-template></app-hero-form-async-validation-template>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel panel-primary">
@@ -55,8 +70,16 @@
                         <div id="panelDynamicControlFormArray" (click)="onPanelClick($event)" class="panel-heading">
                             Dynamic controls using form arrays
                         </div>
-                        <div class="panel-body panelDynamicControlFormArray collapse in">
+                        <div class="panel-body panelDynamicControlFormArray collapse">
                             <app-dynamic-control-form-arrays></app-dynamic-control-form-arrays>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelAsyncValidation" (click)="onPanelClick($event)" class="panel-heading">
+                            Async Validation
+                        </div>
+                        <div class="panel-body panelAsyncValidation collapse">
+                            <app-hero-form-reactive></app-hero-form-reactive>
                         </div>
                     </div>
                 </div>

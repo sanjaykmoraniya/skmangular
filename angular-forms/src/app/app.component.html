@@ -7,7 +7,7 @@
         <div class="panel-body collapse in angularForm">
             <div class="panel panel-primary">
                 <div id="panelTemplateForm" (click)="onPanelClick($event)" class="panel-heading">Template Form</div>
-                <div class="panel-body panelTemplateForm collapse in">
+                <div class="panel-body panelTemplateForm collapse">
 
                     <div class="panel panel-info">
                         <div id="panelTemplateFormValidation" (click)="onPanelClick($event)" class="panel-heading">
@@ -80,6 +80,15 @@
                         </div>
                         <div class="panel-body panelAsyncValidation collapse">
                             <app-hero-form-reactive></app-hero-form-reactive>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelDynamicForm" (click)="onPanelClick($event)" class="panel-heading">
+                           Dynamic Form
+                        </div>
+                        <div class="panel-body panelDynamicForm collapse in">
+                            <h2>Job Application for Heroes</h2>
+                            <app-dynamic-form [questions]="questions"></app-dynamic-form>
                         </div>
                     </div>
                 </div>

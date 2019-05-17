@@ -17,6 +17,8 @@ import { HeroFormTemplateAsyncValidationComponent } from './template-driven-form
 import { ForbiddenValidatorDirective } from './shared/forbidden-name.directive';
 import { IdentityRevealedValidatorDirective } from './shared/identity-revealed.directive';
 import { UniqueAlterEgoValidatorDirective } from './shared/alter-ego.directive';
+import { DynamicFormComponent } from './reactive-forms/dynamic-forms/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './reactive-forms/dynamic-forms/dynamic-form-question.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { UniqueAlterEgoValidatorDirective } from './shared/alter-ego.directive';
     HeroFormTemplateAsyncValidationComponent,
     ForbiddenValidatorDirective,
     IdentityRevealedValidatorDirective,
-    UniqueAlterEgoValidatorDirective
+    UniqueAlterEgoValidatorDirective,
+    DynamicFormComponent, DynamicFormQuestionComponent
   ],
   imports: [
     BrowserModule,

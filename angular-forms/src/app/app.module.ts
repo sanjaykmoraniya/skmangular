@@ -1,3 +1,4 @@
+/* These are JavaScript import statements. Angular doesn’t know anything about these. */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -22,7 +23,13 @@ import { DynamicFormQuestionComponent } from './reactive-forms/dynamic-forms/dyn
 import { MylibComponent } from './mylib/observable/observable.component';
 import { RxjsObservableComponent } from './mylib/rxjs-observable/rxjs-observable.component';
 import { ObservableStudentComponent } from './students/observable-student/observable-student.component';
+import { HttpClientModule } from '@angular/common/http';
 
+// import the feature module here so you can add it to the imports array below
+import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
+// import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard/customer-dashboard.component';
+
+/* The @NgModule decorator lets Angular know that this is an NgModule. */
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,13 +45,16 @@ import { ObservableStudentComponent } from './students/observable-student/observ
     ForbiddenValidatorDirective,
     IdentityRevealedValidatorDirective,
     UniqueAlterEgoValidatorDirective,
-    DynamicFormComponent, DynamicFormQuestionComponent, MylibComponent, RxjsObservableComponent, ObservableStudentComponent
+    DynamicFormComponent, DynamicFormQuestionComponent, MylibComponent, RxjsObservableComponent, ObservableStudentComponent,
+    // CustomerDashboardComponent
   ],
-  imports: [
+  imports: [ /* These are NgModule imports. */
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    CustomerDashboardModule // add the feature module here
   ],
   providers: [],
   bootstrap: [AppComponent]

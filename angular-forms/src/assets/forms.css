@@ -1,7 +1,35 @@
-input.ng-valid[required], .ng-valid.required{
+input.ng-valid[required],
+.ng-valid.required {
     border: 1px solid green;
 }
 
-input.ng-invalid:not(form){
+input.ng-invalid:not(form) {
     border: 1px solid red;
+}
+
+li.democlass {
+    color: olivedrab;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: large;
+}
+
+li.democlass0 {
+    color: red;
+}
+
+li.democlass1 {
+    color: green;
+}
+
+li.democlass2 {
+    color: purple;
+}
+
+li.democlass3 {
+    color: blue;
+}
+
+li.democlass4 {
+    color: orangered;
 }

@@ -19,6 +19,9 @@ import { IdentityRevealedValidatorDirective } from './shared/identity-revealed.d
 import { UniqueAlterEgoValidatorDirective } from './shared/alter-ego.directive';
 import { DynamicFormComponent } from './reactive-forms/dynamic-forms/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './reactive-forms/dynamic-forms/dynamic-form-question.component';
+import { MylibComponent } from './mylib/observable/observable.component';
+import { RxjsObservableComponent } from './mylib/rxjs-observable/rxjs-observable.component';
+import { ObservableStudentComponent } from './students/observable-student/observable-student.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,7 @@ import { DynamicFormQuestionComponent } from './reactive-forms/dynamic-forms/dyn
     ForbiddenValidatorDirective,
     IdentityRevealedValidatorDirective,
     UniqueAlterEgoValidatorDirective,
-    DynamicFormComponent, DynamicFormQuestionComponent
+    DynamicFormComponent, DynamicFormQuestionComponent, MylibComponent, RxjsObservableComponent, ObservableStudentComponent
   ],
   imports: [
     BrowserModule,

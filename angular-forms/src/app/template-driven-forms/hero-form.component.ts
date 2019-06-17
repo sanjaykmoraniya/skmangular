@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero';
+import { Hero } from '../model/hero';
 
 @Component({
   selector: 'app-template-form',

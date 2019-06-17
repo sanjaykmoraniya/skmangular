@@ -26,10 +26,11 @@
                     </div>
                 </div>
             </div>
+
             <div class="panel panel-primary">
                 <div id="panelReactiveForm" (click)="onPanelClick($event)" class="panel-heading">Reactive Form:
                     ReactiveFormsModule</div>
-                <div class="panel-body panelReactiveForm collapse in">
+                <div class="panel-body panelReactiveForm collapse">
                     <div class="panel panel-info">
                         <div id="panelReactiveFormControl" (click)="onPanelClick($event)" class="panel-heading">
                             FormControl</div>
@@ -84,13 +85,46 @@
                     </div>
                     <div class="panel panel-info">
                         <div id="panelDynamicForm" (click)="onPanelClick($event)" class="panel-heading">
-                           Dynamic Form
+                            Dynamic Form
                         </div>
-                        <div class="panel-body panelDynamicForm collapse in">
+                        <div class="panel-body panelDynamicForm collapse">
                             <h2>Job Application for Heroes</h2>
                             <app-dynamic-form [questions]="questions"></app-dynamic-form>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div id="panelObservable" (click)="onPanelClick($event)" class="panel-heading">Observable</div>
+                <div class="panel-body panelObservable collapse in">
+
+                    <div class="panel panel-info">
+                        <div id="panelStudentObservable" (click)="onPanelClick($event)" class="panel-heading">
+                            Validation</div>
+                        <div class="panel-body panelStudentObservable collapse in">
+                            <app-observable-student></app-observable-student>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div id="panelMyLib" (click)="onPanelClick($event)" class="panel-heading">
+                    My Library Observable
+                </div>
+                <div class="panel-body panelMyLib collapse">
+                    <h2>Open Console to see the output(F12)</h2>
+                    <app-mylib></app-mylib>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div id="panelMyLibRxJs" (click)="onPanelClick($event)" class="panel-heading">
+                    My Library RxJs Observable
+                </div>
+                <div class="panel-body panelMyLibRxJs collapse">
+                    <h2>Open Console to see the output(F12)</h2>
+                    <app-rxjs-observable></app-rxjs-observable>
                 </div>
             </div>
         </div>

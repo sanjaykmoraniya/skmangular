@@ -1,0 +1,39 @@
+<div id="my-element" class="row">
+    <div class="col-md-6">
+        Move mouse over here and see the result in consloe. When the mouse is over the upper-left of the screen, unsubscribe to stop listening for mouse movements
+        <div class="myList">
+            <ul id="myListEvent">
+
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="myList">
+            <ul id="myListCounter">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <button class="btn btn-primary" (click)="onSubscribeCreateObservableFromCounterClick()">Subscribe (Create Observable From Counter)</button>
+    </div>
+    <div class="col-md-4">
+        <button class="btn btn-primary" (click)="onUnsubscribeCreateObservableFromCounterClick()">Unsubscribe (Observable Created From Counter)</button>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-4">
+        <button class="btn btn-primary" (click)="onSubscribeCreateObservableFromEventClick()">Subscribe (Create Observable FromEvent)</button>
+    </div>
+    <div class="col-md-4">
+        <button class="btn btn-primary" (click)="onUnsubscribeCreateObservableFromEventClick()">Unsubscribe (Observable Created FromEvent)</button>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-8" id="divCreatesAJAXRequestResult">
+    </div>
+</div>

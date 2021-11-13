@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row" style="margin-top: 30px">
+    <div class="col-md-1">
+      <label>
+        <input type="radio" #op1 checked name="radioStudentSvcType" id="radioStudentSvcTypeLocal" value="Local">
+        Local
+      </label><br />
+
+    </div>
+    <div class="col-md-1">
+      <label>
+        <input type="radio" #op2 name="radioStudentSvcType" id="radioStudentSvcTypeHttp" value="Http">
+        Http
+      </label><br />
+    </div>
+    <div class="col-md-1">
+      <input type="button" (click)="getStudents(op1.checked ? op1.value : op2.value)" value="Refresh(Get Students)">
+    </div>
+  </div>
+  <div *ngIf="loading">loading...
+  </div>
+  <div class="row" style="margin-top: 30px">
+    <div class="col-md-3 col-xs-6" *ngFor="let student of students">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ student.Name }}</h5>
+          <h6 class="card-subtitle">{{ student.Enrollmentnumber }}</h6>
+          <p class="card-text">{{ student.College }}</p>
+          <p class="card-text">{{ student.University }}</p>
+          <a class="btn btn-primary" href="#">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,141 @@
+<div class="nav">
+    <h3 style="text-align: right">Current Time: {{ time$ | async }}</h3>
+</div>
+<div class="panel-group">
+    <div class="panel-info">
+        <div id="angularForm" (click)="onPanelClick($event)" class="panel-heading">Angular Forms</div>
+        <div class="panel-body collapse angularForm">
+            <div class="panel panel-primary">
+                <div id="panelTemplateForm" (click)="onPanelClick($event)" class="panel-heading">Template Form</div>
+                <div class="panel-body panelTemplateForm collapse">
+
+                    <div class="panel panel-info">
+                        <div id="panelTemplateFormValidation" (click)="onPanelClick($event)" class="panel-heading">
+                            Validation</div>
+                        <div class="panel-body panelTemplateFormValidation collapse">
+                            <app-template-form></app-template-form>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-info">
+                        <div id="panelAsyncValidationTemplate" (click)="onPanelClick($event)" class="panel-heading">
+                            Async Validation</div>
+                        <div class="panel-body panelAsyncValidationTemplate collapse in">
+                            <app-hero-form-async-validation-template></app-hero-form-async-validation-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div id="panelReactiveForm" (click)="onPanelClick($event)" class="panel-heading">Reactive Form: ReactiveFormsModule
+                </div>
+                <div class="panel-body panelReactiveForm collapse">
+                    <div class="panel panel-info">
+                        <div id="panelReactiveFormControl" (click)="onPanelClick($event)" class="panel-heading">
+                            FormControl</div>
+                        <div class="panel-body panelReactiveFormControl collapse">
+                            <app-reactive-forms></app-reactive-forms>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelFormGroupControl" (click)="onPanelClick($event)" class="panel-heading">Form Group Control
+                        </div>
+                        <div class="panel-body panelFormGroupControl collapse">
+                            <app-form-group-control></app-form-group-control>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelFormNestedGroupControl" (click)="onPanelClick($event)" class="panel-heading">Form Nested Group Control</div>
+                        <div class="panel-body panelFormNestedGroupControl collapse">
+                            <app-form-nested-group-control></app-form-nested-group-control>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelFormBuilder" (click)="onPanelClick($event)" class="panel-heading">Form Builder
+                        </div>
+                        <div class="panel-body panelFormBuilder collapse">
+                            <app-form-builder></app-form-builder>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelSimpleValidation" (click)="onPanelClick($event)" class="panel-heading">Simple Form Validation
+                        </div>
+                        <div class="panel-body panelSimpleValidation collapse">
+                            <app-simple-form-validation></app-simple-form-validation>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelDynamicControlFormArray" (click)="onPanelClick($event)" class="panel-heading">
+                            Dynamic controls using form arrays
+                        </div>
+                        <div class="panel-body panelDynamicControlFormArray collapse">
+                            <app-dynamic-control-form-arrays></app-dynamic-control-form-arrays>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelAsyncValidation" (click)="onPanelClick($event)" class="panel-heading">
+                            Async Validation
+                        </div>
+                        <div class="panel-body panelAsyncValidation collapse">
+                            <app-hero-form-reactive></app-hero-form-reactive>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div id="panelDynamicForm" (click)="onPanelClick($event)" class="panel-heading">
+                            Dynamic Form
+                        </div>
+                        <div class="panel-body panelDynamicForm collapse">
+                            <h2>Job Application for Heroes</h2>
+                            <app-dynamic-form [questions]="questions"></app-dynamic-form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div id="panelObservable" (click)="onPanelClick($event)" class="panel-heading">Observable</div>
+                <div class="panel-body panelObservable collapse">
+
+                    <div class="panel panel-info">
+                        <div id="panelStudentObservable" (click)="onPanelClick($event)" class="panel-heading">
+                            Student Details</div>
+                        <div class="panel-body panelStudentObservable collapse in">
+                            <app-observable-student></app-observable-student>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div id="panelMyLib" (click)="onPanelClick($event)" class="panel-heading">
+                    My Library Observable
+                </div>
+                <div class="panel-body panelMyLib collapse">
+                    <h2>Open Console to see the output(F12)</h2>
+                    <app-mylib></app-mylib>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div id="panelMyLibRxJs" (click)="onPanelClick($event)" class="panel-heading">
+                    My Library RxJs Observable
+                </div>
+                <div class="panel-body panelMyLibRxJs collapse">
+                    <h2>Open Console to see the output(F12)</h2>
+                    <app-rxjs-observable></app-rxjs-observable>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="divModules" (click)="onPanelClick($event)" class="panel-heading">Modules</div>
+        <div class="panel-body collapse in divModules">
+            <div class="panel panel-primary">
+                <div id="panelFeatureModule" (click)="onPanelClick($event)" class="panel-heading">
+                    Feature Modules</div>
+                <div class="panel-body panelFeatureModule collapse in">
+                    <app-customer-dashboard></app-customer-dashboard>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
